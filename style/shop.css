@@ -47,11 +47,11 @@ main{
 .categories{
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     border-right: 4px solid black;
 }
 .categorisThings{
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     width: 100%;
 }
 .category>button{
