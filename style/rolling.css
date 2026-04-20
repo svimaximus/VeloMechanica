@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Exo 2', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 8px 200px;
+}
+header>nav{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+}
+header>nav>a{
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 750;
+    font-size: 20px;
+}
+#logo{
+    width: 140px;
+}
+footer{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+footer>p{
+    color: white;
+}
+ol{
+    list-style: decimal;
+}
+li{
+    list-style-position: inside;
+}
