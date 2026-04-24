@@ -35,9 +35,52 @@ footer{
 footer>p{
     color: white;
 }
+main{
+    padding: 0 20vw;
+}
 ol{
     list-style: decimal;
 }
 li{
     list-style-position: inside;
+}
+h1{
+    display: flexbox;
+    justify-self: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.rollingBikes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+.rollingBike{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.rollingBike>h2{
+    justify-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.rollingBike>img{
+    height: 11vw;
+    width: 15vw;
+}
+.rollingBike>p{
+    align-self: self-start;
+}
+.rollingBike>ol{
+    margin-top: 20px;
+}
+.info{
+    margin-bottom: 50px;
+}
+.conditions>ol{
+    margin-top: 20px;  
+    margin-bottom: 20px;
 }
