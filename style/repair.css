@@ -38,7 +38,7 @@ footer>p{
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 .hero{
     display: flex;
@@ -46,6 +46,7 @@ main{
     align-items: center;
     background-color: gray;
     height: 550px;
+    width: 100vw;
 }
 .hero>div{
     display: flex;
@@ -56,4 +57,63 @@ main{
     background-position: center;
     
     background-image: url('../Images/Rapair/background.jpg');
-}z
+}
+.hero>div>div>h1{
+    color: white;
+}
+.cover{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.servicePrice>h2{ 
+    justify-self: center;
+}
+.sectionTitle{
+    display: flex;
+    justify-content: center;
+}
+.sectionSubtitle{
+    display: flex;
+    justify-content: center;
+}
+.servicesNavButton{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.servicesNavButton>div{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 120px;
+    box-shadow: 0px 0px 10px;
+}
+.service {
+    display: flex;
+    align-items: baseline; 
+    gap: 10px;
+    margin-bottom: 8px;   
+}
+.service p:first-child {
+    display: flex;
+    flex-grow: 1;  
+    align-items: center;
+}
+.service p:first-child::after {
+    content: "";
+    flex-grow: 1;
+    margin-left: 10px;
+    border-bottom: 2px dotted #000;
+    height: 1px;
+}
+.service p:last-child {
+    white-space: nowrap;
+    font-weight: bold;
+}
