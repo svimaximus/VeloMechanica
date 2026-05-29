@@ -108,3 +108,16 @@ main{
 b{
     font-size: 20px;
 }
+.coolImgs {
+    width: 100vw;    
+}
+.hsldr-container .hsldr-next, 
+.hsldr-container .hsldr-prev,
+.hsldr-container.hsldr-has-nav-bar .hsldr-next,
+.hsldr-container.hsldr-has-nav-bar .hsldr-prev {
+    top: 100vh;              
+    bottom: 0px;        
+    transform: none;      
+    -webkit-transform: none;
+    -moz-transform: none;
+}
