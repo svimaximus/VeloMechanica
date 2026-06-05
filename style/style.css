@@ -23,6 +23,39 @@ header>nav>a{
     font-style: normal;
     font-weight: 750;
     font-size: 20px;
+
+    position: relative;
+    display: inline-block; /* Щоб посилання коректно прораховувало свої розміри */
+    text-decoration: none;
+}
+header>nav>a:hover{
+    transition: 1s;
+    color: red;
+}
+header>nav>a::after{
+    /* display: block;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    content: "";
+    bottom: -5px;    
+    left: 0; */
+
+    content: "";
+    position: absolute;
+    bottom: -5px;    
+    left: 0;
+    height: 3px;          /* Зменшив висоту, щоб це виглядало як лінія, а не квадрат */
+    width: 0;             /* Починаємо з нуля, щоб було куди рости */
+    background-color: red;
+    transition: width 0.4s ease-in-out;
+}
+header>nav>a:hover::after{
+    /* transition: 1s;
+    width: 100%; */
+
+    width: 100%;
 }
 #logo{
     width: 140px;
@@ -35,6 +68,7 @@ footer{
 footer>p{
     color: white;
 }
+
 .mainSection{
     display: flex;
     flex-direction: column;
@@ -49,14 +83,19 @@ footer>p{
     align-items: center;
     justify-content: space-around;
     margin: 40px;
-    padding: 10px 300px;
+    padding: 20px 300px;
     border-radius: 20px;
+    gap: 10px;
 }
 .navigation_button{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    transition: transform 300ms ease-in-out;
+}
+.navigation_button:hover{
+    
+    transform: scale(1.2);
 }
 .button_image{
     width: 70px;
